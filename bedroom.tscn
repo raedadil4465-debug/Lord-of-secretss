@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bqdj36ifl4elr"]
+
+[ext_resource type="PackedScene" uid="uid://c7g4gkj3f70ik" path="res://scenes/player.tscn" id="1_kpde0"]
+[ext_resource type="PackedScene" uid="uid://0tc3hmwhhauq" path="res://scenes/interactable.tscn" id="2_e18cj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pwon3"]
+radius = 5.0990195
+
+[node name="Bedroom" type="Node2D" unique_id=948353523]
+
+[node name="Player" parent="." unique_id=543599275 instance=ExtResource("1_kpde0")]
+position = Vector2(41, 44)
+
+[node name="Mirror" parent="." unique_id=1665102802 instance=ExtResource("2_e18cj")]
+position = Vector2(88, 18)
+timeline_name = "timeline"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mirror" unique_id=2037241155]
+shape = SubResource("CircleShape2D_pwon3")
+
+[node name="ColorRect" type="ColorRect" parent="Mirror" unique_id=2060486801]
+offset_left = -6.0
+offset_top = -4.0
+offset_right = 6.0
+offset_bottom = 5.0
+mouse_filter = 2
+metadata/_edit_use_anchors_ = true
