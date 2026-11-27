@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://br18lgpga2y2v"]
+
+[ext_resource type="Script" uid="uid://c8b8abk7b14uq" path="res://Lord of secrets/addons/dialogic/Modules/HighlightPortrait/simple_highlight_portrait.gd" id="1_ceqva"]
+
+[node name="DefaultPortrait" type="Node2D"]
+script = ExtResource("1_ceqva")
+
+[node name="Portrait" type="Sprite2D" parent="."]
+centered = false
