@@ -11,9 +11,10 @@ radius = 5.0990195
 [node name="Player" parent="." unique_id=543599275 instance=ExtResource("1_kpde0")]
 position = Vector2(41, 44)
 
-[node name="Mirror" parent="." unique_id=1665102802 instance=ExtResource("2_e18cj")]
+[node name="Mirror" parent="." unique_id=1665102802 node_paths=PackedStringArray("prompt_node") instance=ExtResource("2_e18cj")]
 position = Vector2(88, 18)
 timeline_name = "timeline"
+prompt_node = NodePath("Label2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Mirror" unique_id=2037241155]
 shape = SubResource("CircleShape2D_pwon3")
@@ -25,3 +26,10 @@ offset_right = 6.0
 offset_bottom = 5.0
 mouse_filter = 2
 metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="Mirror" unique_id=283469531]
+visible = false
+offset_right = 40.0
+offset_bottom = 23.0
+text = "E to interact
+"
