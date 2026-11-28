@@ -1,0 +1,331 @@
+{
+ "tile_size": 16,
+ "palette": "palette.hex",
+ "coords": "pixels, origin top-left of each prop's own canvas (of one frame for animated props); collision = [x, y, w, h]",
+ "kinds": {
+  "object": "stands on the ground, blocks movement (collision suggested); building = true marks multi-tile houses",
+  "wall": "mounted on or part of a wall; anchor = wall base",
+  "hanging": "hangs from above; anchor = hang point; no collision",
+  "decal": "flat on the ground, drawn under everything, no outline, no collision",
+  "passage": "open door, walkable"
+ },
+ "anim": "animated props: file is a horizontal strip of anim.frames frames of anim.frame_size, loop at anim.fps; anim.static names the still prop for the same object",
+ "props": {
+  "armchair": {
+   "family": "salon",
+   "group": "armchair",
+   "variant": "velvet",
+   "kind": "object",
+   "canvas": [
+    24,
+    24
+   ],
+   "visible_rect": [
+    3,
+    1,
+    18,
+    22
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    12,
+    22
+   ],
+   "collision": [
+    3,
+    13,
+    17,
+    10
+   ],
+   "outline": true,
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "armchair.png"
+  },
+  "sofa": {
+   "family": "salon",
+   "group": "sofa",
+   "variant": "mauve_velvet",
+   "kind": "object",
+   "canvas": [
+    40,
+    16
+   ],
+   "visible_rect": [
+    4,
+    2,
+    32,
+    13
+   ],
+   "footprint_tiles": [
+    2,
+    1
+   ],
+   "anchor": [
+    20,
+    14
+   ],
+   "collision": [
+    4,
+    7,
+    31,
+    8
+   ],
+   "outline": true,
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "sofa.png"
+  },
+  "tea_table": {
+   "family": "salon",
+   "group": "table",
+   "variant": "tea",
+   "kind": "object",
+   "canvas": [
+    16,
+    16
+   ],
+   "visible_rect": [
+    2,
+    1,
+    11,
+    14
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    7,
+    14
+   ],
+   "collision": [
+    2,
+    8,
+    10,
+    6
+   ],
+   "outline": true,
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "tea_table.png"
+  },
+  "portrait_small": {
+   "family": "salon",
+   "group": "portrait",
+   "variant": "small_lady",
+   "kind": "wall",
+   "canvas": [
+    10,
+    12
+   ],
+   "visible_rect": [
+    0,
+    0,
+    9,
+    11
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    4,
+    11
+   ],
+   "collision": null,
+   "outline": true,
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "portrait_small.png"
+  },
+  "vase_dead_flowers": {
+   "family": "salon",
+   "group": "vase",
+   "variant": "dead_flowers",
+   "kind": "object",
+   "canvas": [
+    16,
+    24
+   ],
+   "visible_rect": [
+    1,
+    0,
+    13,
+    22
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    8,
+    22
+   ],
+   "collision": [
+    2,
+    16,
+    12,
+    7
+   ],
+   "outline": true,
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "vase_dead_flowers.png"
+  },
+  "dust_sheet_armchair": {
+   "family": "salon",
+   "group": "dust_sheet",
+   "variant": "armchair",
+   "kind": "object",
+   "canvas": [
+    24,
+    24
+   ],
+   "visible_rect": [
+    3,
+    3,
+    16,
+    20
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    11,
+    22
+   ],
+   "collision": [
+    4,
+    14,
+    15,
+    9
+   ],
+   "outline": true,
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "dust_sheet_armchair.png"
+  },
+  "broken_chair": {
+   "family": "cellar",
+   "group": "chair",
+   "variant": "broken",
+   "kind": "object",
+   "canvas": [
+    24,
+    24
+   ],
+   "visible_rect": [
+    4,
+    8,
+    15,
+    15
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    11,
+    22
+   ],
+   "collision": [
+    4,
+    14,
+    14,
+    8
+   ],
+   "outline": true,
+   "room": "cellar",
+   "hand_cleanup_16": null,
+   "file": "broken_chair.png"
+  },
+  "candelabra_anim": {
+   "family": "salon",
+   "group": "candelabra",
+   "variant": "lit_anim",
+   "kind": "object",
+   "canvas": [
+    16,
+    24
+   ],
+   "visible_rect": [
+    4,
+    1,
+    7,
+    21
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    8,
+    22
+   ],
+   "collision": [
+    5,
+    19,
+    6,
+    4
+   ],
+   "outline": true,
+   "anim": {
+    "frames": 6,
+    "frame_size": [
+     16,
+     24
+    ],
+    "fps": 8,
+    "loop": true,
+    "static": "candelabra"
+   },
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "candelabra_anim.png"
+  },
+  "wall_sconce_anim": {
+   "family": "salon",
+   "group": "wall_sconce",
+   "variant": "lit_anim",
+   "kind": "wall",
+   "canvas": [
+    16,
+    16
+   ],
+   "visible_rect": [
+    2,
+    2,
+    11,
+    13
+   ],
+   "footprint_tiles": [
+    1,
+    1
+   ],
+   "anchor": [
+    8,
+    14
+   ],
+   "collision": null,
+   "outline": true,
+   "anim": {
+    "frames": 6,
+    "frame_size": [
+     16,
+     16
+    ],
+    "fps": 8,
+    "loop": true,
+    "static": "wall_sconce"
+   },
+   "room": "salon",
+   "hand_cleanup_16": null,
+   "file": "wall_sconce_anim.png"
+  }
+ }
+}

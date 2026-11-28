@@ -1,0 +1,355 @@
+{
+ "character": "possessed_doll",
+ "grid": 32,
+ "kind": "enemy",
+ "rows": [
+  "south",
+  "south-east",
+  "east",
+  "north-east",
+  "north",
+  "north-west",
+  "west",
+  "south-west"
+ ],
+ "native_directions": [
+  "south",
+  "south-east",
+  "east",
+  "north-east",
+  "north"
+ ],
+ "rim_light": true,
+ "rim_colour": "#667285",
+ "light_from": "up-left (screen space)",
+ "anims": {
+  "idle": {
+   "sheet": "idle_sheet.png",
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    37
+   ],
+   "frames": 4,
+   "fps": 4,
+   "loop": true,
+   "dirs": {
+    "south": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "south-east": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "east": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "north-east": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "north": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "north-west": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": "north-east",
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "west": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": "east",
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    },
+    "south-west": {
+     "frames": 4,
+     "take": "../raw/idle",
+     "mirrored_from": "south-east",
+     "align_iou_frame0_vs_rotation": 1.0,
+     "body_h": [
+      29,
+      30
+     ]
+    }
+   }
+  },
+  "walk": {
+   "sheet": "walk_sheet.png",
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    37
+   ],
+   "frames": 8,
+   "fps": 8,
+   "loop": true,
+   "dirs": {
+    "south": {
+     "frames": 8,
+     "take": "walk",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.911,
+     "body_h": [
+      31,
+      32
+     ]
+    },
+    "south-east": {
+     "frames": 8,
+     "take": "walk",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.921,
+     "body_h": [
+      29,
+      31
+     ]
+    },
+    "east": {
+     "frames": 8,
+     "take": "walk",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.922,
+     "body_h": [
+      30,
+      31
+     ]
+    },
+    "north-east": {
+     "frames": 8,
+     "take": "walk2",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.956,
+     "body_h": [
+      30,
+      31
+     ]
+    },
+    "north": {
+     "frames": 8,
+     "take": "walk",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.892,
+     "body_h": [
+      30,
+      32
+     ]
+    },
+    "north-west": {
+     "frames": 8,
+     "take": "walk2",
+     "mirrored_from": "north-east",
+     "align_iou_frame0_vs_rotation": 0.956,
+     "body_h": [
+      30,
+      31
+     ]
+    },
+    "west": {
+     "frames": 8,
+     "take": "walk",
+     "mirrored_from": "east",
+     "align_iou_frame0_vs_rotation": 0.922,
+     "body_h": [
+      30,
+      31
+     ]
+    },
+    "south-west": {
+     "frames": 8,
+     "take": "walk",
+     "mirrored_from": "south-east",
+     "align_iou_frame0_vs_rotation": 0.921,
+     "body_h": [
+      29,
+      31
+     ]
+    }
+   }
+  },
+  "attack": {
+   "sheet": "attack_sheet.png",
+   "cell": [
+    48,
+    48
+   ],
+   "foot": [
+    24,
+    42
+   ],
+   "frames": 8,
+   "fps": 12,
+   "loop": false,
+   "dirs": {
+    "south": {
+     "frames": 8,
+     "take": "attack3",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.758,
+     "body_h": [
+      28,
+      31
+     ]
+    },
+    "south-east": {
+     "frames": 8,
+     "take": "attack3",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.791,
+     "body_h": [
+      28,
+      31
+     ]
+    },
+    "east": {
+     "frames": 8,
+     "take": "attack2",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.818,
+     "body_h": [
+      27,
+      35
+     ]
+    },
+    "north-east": {
+     "frames": 8,
+     "take": "attack",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.846,
+     "body_h": [
+      29,
+      32
+     ]
+    },
+    "north": {
+     "frames": 8,
+     "take": "attack2",
+     "mirrored_from": null,
+     "align_iou_frame0_vs_rotation": 0.778,
+     "body_h": [
+      29,
+      31
+     ]
+    },
+    "north-west": {
+     "frames": 8,
+     "take": "attack",
+     "mirrored_from": "north-east",
+     "align_iou_frame0_vs_rotation": 0.846,
+     "body_h": [
+      29,
+      32
+     ]
+    },
+    "west": {
+     "frames": 8,
+     "take": "attack2",
+     "mirrored_from": "east",
+     "align_iou_frame0_vs_rotation": 0.818,
+     "body_h": [
+      27,
+      35
+     ]
+    },
+    "south-west": {
+     "frames": 8,
+     "take": "attack3",
+     "mirrored_from": "south-east",
+     "align_iou_frame0_vs_rotation": 0.791,
+     "body_h": [
+      28,
+      31
+     ]
+    }
+   },
+   "hold_last_ms": 200,
+   "hit_frame": 4
+  }
+ },
+ "mirrored": {
+  "north-west": "north-east",
+  "west": "east",
+  "south-west": "south-east"
+ },
+ "pivots": {
+  "idle": {
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    37
+   ]
+  },
+  "walk": {
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    37
+   ]
+  },
+  "attack": {
+   "cell": [
+    48,
+    48
+   ],
+   "foot": [
+    24,
+    42
+   ]
+  }
+ },
+ "pivot_rule": "foot = bottom-centre pivot (where the feet touch the floor) per cell"
+}

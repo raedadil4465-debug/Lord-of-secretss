@@ -1,0 +1,74 @@
+{
+ "set": "parquet",
+ "tile_size": 16,
+ "sheet": "tiles_16.png",
+ "sheet_size": [
+  96,
+  16
+ ],
+ "category": "floor",
+ "terrain": "parquet",
+ "notes": "period-1 floor; base + random-fill variants by weight; moonlight (weight 0) goes under a window by hand. Variants keep the base's outer 1px ring.",
+ "tiles": [
+  {
+   "index": 0,
+   "name": "parquet_base",
+   "x": 0,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "weight": 50,
+   "variant_of": ""
+  },
+  {
+   "index": 1,
+   "name": "parquet_base_b",
+   "x": 16,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "weight": 35,
+   "variant_of": "parquet_base"
+  },
+  {
+   "index": 2,
+   "name": "parquet_base_c",
+   "x": 32,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "weight": 15,
+   "variant_of": "parquet_base"
+  },
+  {
+   "index": 3,
+   "name": "parquet_worn",
+   "x": 48,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "weight": 10,
+   "variant_of": "parquet_base"
+  },
+  {
+   "index": 4,
+   "name": "parquet_lifted_board",
+   "x": 64,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "weight": 3,
+   "variant_of": "parquet_base"
+  },
+  {
+   "index": 5,
+   "name": "parquet_moonlight",
+   "x": 80,
+   "y": 0,
+   "w": 16,
+   "h": 16,
+   "weight": 0,
+   "variant_of": "parquet_base"
+  }
+ ]
+}

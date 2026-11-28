@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="SpriteFrames" path="res://gravewood/32/enemies/possessed_doll/possessed_doll_frames.tres" id="1_possessed_doll_frames"]
+
+[node name="possessed_doll" type="AnimatedSprite2D"]
+texture_filter = 1
+sprite_frames = ExtResource("1_possessed_doll_frames")
+animation = &"idle_south"
+autoplay = "idle_south"
+centered = false
+offset = Vector2(-24, -42)

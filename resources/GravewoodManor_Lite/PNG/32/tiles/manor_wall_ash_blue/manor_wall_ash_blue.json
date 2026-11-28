@@ -1,0 +1,1048 @@
+{
+ "set": "manor_wall_ash_blue",
+ "tile_size": 32,
+ "sheet": "tiles_32.png",
+ "sheet_size": [
+  128,
+  256
+ ],
+ "category": "wall",
+ "scheme": "ash_blue",
+ "terrains": {
+  "lower": "parquet",
+  "upper": "wall",
+  "transition": "manor_wall_face"
+ },
+ "floor": "parquet",
+ "layout": "RC cliff 4x8 (same tile positions and pattern_4x4 as Rotten Cathedral wall)",
+ "pattern_encoding": "pattern_4x4 rows top->bottom, vertex codes: 0=lower 1=upper 2=transition 255=any; the centre 2x2 are this tile's NW,NE / SW,SE corners",
+ "corner_bits_upper": "NW<<3 | NE<<2 | SW<<1 | SE, bit set = upper terrain at that corner",
+ "notes": "cliff set: the face spans the two cells below the wall/floor boundary (vertex code 2). The wall top is the RC wall top, so wall masses join RC, Catacombs bone_wall and the cellar.",
+ "tiles": [
+  {
+   "index": 0,
+   "name": "manor_wall_ash_blue_00_floor",
+   "x": 64,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "parquet",
+    "SE": "parquet",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 0,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 1,
+   "name": "manor_wall_ash_blue_01_edge",
+   "x": 96,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "parquet",
+    "SE": "wall",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 1,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 2,
+   "name": "manor_wall_ash_blue_02_edge",
+   "x": 32,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "parquet",
+    "SE": "wall",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 3,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 3,
+   "name": "manor_wall_ash_blue_03_edge",
+   "x": 64,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "parquet",
+    "SE": "parquet",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 2,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 4,
+   "name": "manor_wall_ash_blue_04_edge",
+   "x": 96,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "parquet",
+    "SE": "wall",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 5,
+   "pattern_4x4": [
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 5,
+   "name": "manor_wall_ash_blue_05_edge",
+   "x": 96,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "parquet",
+    "SE": "wall",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 5,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 6,
+   "name": "manor_wall_ash_blue_06_top",
+   "x": 0,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "wall",
+    "SE": "wall",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 15,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 7,
+   "name": "manor_wall_ash_blue_07_edge",
+   "x": 32,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "wall",
+    "SE": "parquet",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 10,
+   "pattern_4x4": [
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 8,
+   "name": "manor_wall_ash_blue_08_edge",
+   "x": 32,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "wall",
+    "SE": "parquet",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 10,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 9,
+   "name": "manor_wall_ash_blue_09_edge",
+   "x": 0,
+   "y": 128,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "wall",
+    "SE": "wall",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 11,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 10,
+   "name": "manor_wall_ash_blue_10_edge",
+   "x": 96,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "parquet",
+    "SE": "wall",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 7,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 11,
+   "name": "manor_wall_ash_blue_11_face_corner",
+   "x": 32,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "wall",
+    "SE": "manor_wall_face",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 14,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     1,
+     2,
+     255
+    ],
+    [
+     255,
+     255,
+     0,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 12,
+   "name": "manor_wall_ash_blue_12_face_upper",
+   "x": 96,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "wall",
+    "SE": "manor_wall_face",
+    "SW": "manor_wall_face"
+   },
+   "corner_bits_upper": 12,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     2,
+     2,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 13,
+   "name": "manor_wall_ash_blue_13_face_corner",
+   "x": 32,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "wall",
+    "SE": "parquet",
+    "SW": "manor_wall_face"
+   },
+   "corner_bits_upper": 8,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     2,
+     0,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 14,
+   "name": "manor_wall_ash_blue_14_face_corner",
+   "x": 32,
+   "y": 224,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "manor_wall_face",
+    "NW": "wall",
+    "SE": "parquet",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 10,
+   "pattern_4x4": [
+    [
+     255,
+     1,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     2,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 15,
+   "name": "manor_wall_ash_blue_15_face_lower",
+   "x": 96,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "manor_wall_face",
+    "NW": "manor_wall_face",
+    "SE": "parquet",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 0,
+   "pattern_4x4": [
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     2,
+     2,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 16,
+   "name": "manor_wall_ash_blue_16_face_corner",
+   "x": 32,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "manor_wall_face",
+    "SE": "parquet",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 0,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     2,
+     0,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 17,
+   "name": "manor_wall_ash_blue_17_face_corner",
+   "x": 64,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "parquet",
+    "SE": "manor_wall_face",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 4,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     2,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 18,
+   "name": "manor_wall_ash_blue_18_face_corner",
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "wall",
+    "SE": "wall",
+    "SW": "manor_wall_face"
+   },
+   "corner_bits_upper": 13,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     1,
+     255
+    ],
+    [
+     255,
+     2,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 19,
+   "name": "manor_wall_ash_blue_19_face_corner",
+   "x": 64,
+   "y": 192,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "parquet",
+    "NW": "wall",
+    "SE": "wall",
+    "SW": "manor_wall_face"
+   },
+   "corner_bits_upper": 9,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     2,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 20,
+   "name": "manor_wall_ash_blue_20_face_corner",
+   "x": 64,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "manor_wall_face",
+    "NW": "parquet",
+    "SE": "parquet",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 0,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     2,
+     255
+    ],
+    [
+     255,
+     0,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 21,
+   "name": "manor_wall_ash_blue_21_face_corner",
+   "x": 0,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "manor_wall_face",
+    "SE": "wall",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 5,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     1,
+     255
+    ],
+    [
+     255,
+     2,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 22,
+   "name": "manor_wall_ash_blue_22_face_corner",
+   "x": 64,
+   "y": 224,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "manor_wall_face",
+    "SE": "wall",
+    "SW": "parquet"
+   },
+   "corner_bits_upper": 5,
+   "pattern_4x4": [
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     2,
+     1,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 23,
+   "name": "manor_wall_ash_blue_23_face_corner",
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "wall",
+    "NW": "parquet",
+    "SE": "manor_wall_face",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 6,
+   "pattern_4x4": [
+    [
+     255,
+     255,
+     255,
+     255
+    ],
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     1,
+     2,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ]
+   ]
+  },
+  {
+   "index": 24,
+   "name": "manor_wall_ash_blue_24_face_corner",
+   "x": 0,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NE": "manor_wall_face",
+    "NW": "wall",
+    "SE": "parquet",
+    "SW": "wall"
+   },
+   "corner_bits_upper": 10,
+   "pattern_4x4": [
+    [
+     255,
+     0,
+     1,
+     255
+    ],
+    [
+     255,
+     1,
+     2,
+     255
+    ],
+    [
+     255,
+     1,
+     0,
+     255
+    ],
+    [
+     255,
+     255,
+     255,
+     255
+    ]
+   ]
+  }
+ ]
+}

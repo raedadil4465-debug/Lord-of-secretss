@@ -1,0 +1,258 @@
+{
+ "set": "rug_wine",
+ "tile_size": 32,
+ "sheet": "tiles_32.png",
+ "sheet_size": [
+  128,
+  128
+ ],
+ "category": "rug",
+ "terrains": {
+  "lower": "parquet",
+  "upper": "rug_wine"
+ },
+ "layout": "RC 4x4 corner wang (same positions as RC carpet)",
+ "notes": "muted rug with a bone trim; make it at least 2 vertices wide",
+ "tiles": [
+  {
+   "index": 0,
+   "name": "rug_wine_13",
+   "x": 0,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "rug_wine",
+    "SW": "parquet",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 13
+  },
+  {
+   "index": 1,
+   "name": "rug_wine_10",
+   "x": 32,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "parquet",
+    "SW": "rug_wine",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 10
+  },
+  {
+   "index": 2,
+   "name": "rug_wine_04",
+   "x": 64,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "rug_wine",
+    "SW": "parquet",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 4
+  },
+  {
+   "index": 3,
+   "name": "rug_wine_12",
+   "x": 96,
+   "y": 0,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "rug_wine",
+    "SW": "parquet",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 12
+  },
+  {
+   "index": 4,
+   "name": "rug_wine_06",
+   "x": 0,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "rug_wine",
+    "SW": "rug_wine",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 6
+  },
+  {
+   "index": 5,
+   "name": "rug_wine_08",
+   "x": 32,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "parquet",
+    "SW": "parquet",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 8
+  },
+  {
+   "index": 6,
+   "name": "rug_wine_00",
+   "x": 64,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "parquet",
+    "SW": "parquet",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 0
+  },
+  {
+   "index": 7,
+   "name": "rug_wine_01",
+   "x": 96,
+   "y": 32,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "parquet",
+    "SW": "parquet",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 1
+  },
+  {
+   "index": 8,
+   "name": "rug_wine_11",
+   "x": 0,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "parquet",
+    "SW": "rug_wine",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 11
+  },
+  {
+   "index": 9,
+   "name": "rug_wine_03",
+   "x": 32,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "parquet",
+    "SW": "rug_wine",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 3
+  },
+  {
+   "index": 10,
+   "name": "rug_wine_02",
+   "x": 64,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "parquet",
+    "SW": "rug_wine",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 2
+  },
+  {
+   "index": 11,
+   "name": "rug_wine_05",
+   "x": 96,
+   "y": 64,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "rug_wine",
+    "SW": "parquet",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 5
+  },
+  {
+   "index": 12,
+   "name": "rug_wine_15",
+   "x": 0,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "rug_wine",
+    "SW": "rug_wine",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 15
+  },
+  {
+   "index": 13,
+   "name": "rug_wine_14",
+   "x": 32,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "rug_wine",
+    "SW": "rug_wine",
+    "SE": "parquet"
+   },
+   "corner_bits_upper": 14
+  },
+  {
+   "index": 14,
+   "name": "rug_wine_09",
+   "x": 64,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "rug_wine",
+    "NE": "parquet",
+    "SW": "parquet",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 9
+  },
+  {
+   "index": 15,
+   "name": "rug_wine_07",
+   "x": 96,
+   "y": 96,
+   "w": 32,
+   "h": 32,
+   "corners": {
+    "NW": "parquet",
+    "NE": "rug_wine",
+    "SW": "rug_wine",
+    "SE": "rug_wine"
+   },
+   "corner_bits_upper": 7
+  }
+ ]
+}

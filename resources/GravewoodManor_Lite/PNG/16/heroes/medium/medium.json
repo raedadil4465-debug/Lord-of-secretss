@@ -1,0 +1,389 @@
+{
+ "character": "medium",
+ "grid": 16,
+ "rows": [
+  "south",
+  "south-east",
+  "east",
+  "north-east",
+  "north",
+  "north-west",
+  "west",
+  "south-west"
+ ],
+ "rim_light": true,
+ "light_from": "up-left (screen space)",
+ "shawl": "mauve",
+ "anims": {
+  "idle": {
+   "sheet": "idle_sheet.png",
+   "cell": [
+    24,
+    24
+   ],
+   "foot": [
+    12,
+    22
+   ],
+   "frames": 4,
+   "fps": 5,
+   "loop": true,
+   "dirs": {
+    "south": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -4
+     ],
+     "source": "idle"
+    },
+    "south-east": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -4
+     ],
+     "source": "idle"
+    },
+    "east": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -5
+     ],
+     "source": "idle"
+    },
+    "north-east": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -5
+     ],
+     "source": "idle"
+    },
+    "north": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -4
+     ],
+     "source": "idle"
+    },
+    "north-west": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -4
+     ],
+     "source": "idle"
+    },
+    "west": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -5
+     ],
+     "source": "idle"
+    },
+    "south-west": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -4
+     ],
+     "source": "idle"
+    }
+   }
+  },
+  "walk": {
+   "sheet": "walk_sheet.png",
+   "cell": [
+    24,
+    24
+   ],
+   "foot": [
+    12,
+    22
+   ],
+   "frames": 8,
+   "fps": 10,
+   "loop": true,
+   "dirs": {
+    "south": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -10
+     ]
+    },
+    "south-east": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -11
+     ]
+    },
+    "east": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -10
+     ]
+    },
+    "north-east": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -7
+     ]
+    },
+    "north": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -7
+     ]
+    },
+    "north-west": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      -1,
+      -7
+     ]
+    },
+    "west": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      1,
+      -10
+     ]
+    },
+    "south-west": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -11
+     ]
+    }
+   }
+  },
+  "attack": {
+   "frames": 10,
+   "fps": 12,
+   "loop": false,
+   "hold_last_ms": 300,
+   "motion": "Spirit casting fling: the wisp hand is drawn up across the body to the opposite shoulder, then flung forward at shoulder height with the arm fully stretched toward the facing direction, a short hold, then back to the idle stance. The wisp moves with the hand; no bolt or particles are drawn (add the spectral bolt in-engine on frames 4-5).",
+   "last_frame": "= frame 0 = idle frame 0",
+   "sheet": "attack_sheet.png",
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    37
+   ],
+   "dirs": {
+    "south": {
+     "frames": 10,
+     "mirrored_from": null
+    },
+    "south-east": {
+     "frames": 10,
+     "mirrored_from": null
+    },
+    "east": {
+     "frames": 10,
+     "mirrored_from": null
+    },
+    "north-east": {
+     "frames": 10,
+     "mirrored_from": null
+    },
+    "north": {
+     "frames": 10,
+     "mirrored_from": null
+    },
+    "north-west": {
+     "frames": 10,
+     "mirrored_from": "north-east"
+    },
+    "west": {
+     "frames": 10,
+     "mirrored_from": null
+    },
+    "south-west": {
+     "frames": 10,
+     "mirrored_from": null
+    }
+   }
+  },
+  "hurt": {
+   "frames": 6,
+   "fps": 10,
+   "loop": false,
+   "sheet": "hurt_sheet.png",
+   "cell": [
+    32,
+    32
+   ],
+   "foot": [
+    16,
+    29
+   ],
+   "dirs": {
+    "south": {
+     "frames": 6,
+     "mirrored_from": null
+    },
+    "south-east": {
+     "frames": 6,
+     "mirrored_from": null
+    },
+    "east": {
+     "frames": 6,
+     "mirrored_from": null
+    },
+    "north-east": {
+     "frames": 6,
+     "mirrored_from": null
+    },
+    "north": {
+     "frames": 6,
+     "mirrored_from": null
+    },
+    "north-west": {
+     "frames": 6,
+     "mirrored_from": "north-east"
+    },
+    "west": {
+     "frames": 6,
+     "mirrored_from": "east"
+    },
+    "south-west": {
+     "frames": 6,
+     "mirrored_from": "south-east"
+    }
+   }
+  },
+  "death": {
+   "frames": 8,
+   "fps": 8,
+   "loop": false,
+   "hold_last_ms": 1200,
+   "sheet": "death_sheet.png",
+   "cell": [
+    32,
+    32
+   ],
+   "foot": [
+    16,
+    29
+   ],
+   "dirs": {
+    "south": {
+     "frames": 8,
+     "mirrored_from": null
+    },
+    "south-east": {
+     "frames": 8,
+     "mirrored_from": null
+    },
+    "east": {
+     "frames": 8,
+     "mirrored_from": null
+    },
+    "north-east": {
+     "frames": 8,
+     "mirrored_from": null
+    },
+    "north": {
+     "frames": 8,
+     "mirrored_from": null
+    },
+    "north-west": {
+     "frames": 8,
+     "mirrored_from": "north-east"
+    },
+    "west": {
+     "frames": 8,
+     "mirrored_from": "east"
+    },
+    "south-west": {
+     "frames": 8,
+     "mirrored_from": null
+    }
+   }
+  }
+ },
+ "pivots": {
+  "idle": {
+   "cell": [
+    24,
+    24
+   ],
+   "foot": [
+    12,
+    22
+   ]
+  },
+  "walk": {
+   "cell": [
+    24,
+    24
+   ],
+   "foot": [
+    12,
+    22
+   ]
+  },
+  "attack": {
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    37
+   ]
+  },
+  "hurt": {
+   "cell": [
+    32,
+    32
+   ],
+   "foot": [
+    16,
+    29
+   ]
+  },
+  "death": {
+   "cell": [
+    32,
+    32
+   ],
+   "foot": [
+    16,
+    29
+   ]
+  }
+ },
+ "pivot_rule": "16: combat cells foot (C/2, C-3) (RC 16 rule); idle/walk keep their own cell foot",
+ "attack_note": "Spirit casting fling: the wisp hand is drawn up across the body to the opposite shoulder, then flung forward at shoulder height with the arm fully stretched toward the facing direction, a short hold, then back to the idle stance. The wisp moves with the hand; no bolt or particles are drawn (add the spectral bolt in-engine on frames 4-5)."
+}

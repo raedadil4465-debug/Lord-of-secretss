@@ -1,0 +1,797 @@
+{
+ "character": "medium",
+ "grid": 32,
+ "rows": [
+  "south",
+  "south-east",
+  "east",
+  "north-east",
+  "north",
+  "north-west",
+  "west",
+  "south-west"
+ ],
+ "rim_light": true,
+ "light_from": "up-left (screen space)",
+ "shawl": "mauve",
+ "anims": {
+  "idle": {
+   "sheet": "idle_sheet.png",
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    38
+   ],
+   "frames": 4,
+   "fps": 5,
+   "loop": true,
+   "dirs": {
+    "south": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      1
+     ],
+     "source": "idle"
+    },
+    "south-east": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      0
+     ],
+     "source": "idle"
+    },
+    "east": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      0
+     ],
+     "source": "idle"
+    },
+    "north-east": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -1
+     ],
+     "source": "idle"
+    },
+    "north": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      0
+     ],
+     "source": "idle"
+    },
+    "north-west": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      0
+     ],
+     "source": "idle"
+    },
+    "west": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -1
+     ],
+     "source": "idle"
+    },
+    "south-west": {
+     "frames": 4,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      0
+     ],
+     "source": "idle"
+    }
+   }
+  },
+  "walk": {
+   "sheet": "walk_sheet.png",
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    38
+   ],
+   "frames": 8,
+   "fps": 10,
+   "loop": true,
+   "dirs": {
+    "south": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      -2,
+      -8
+     ]
+    },
+    "south-east": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -8
+     ]
+    },
+    "east": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -8
+     ]
+    },
+    "north-east": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      -4,
+      -9
+     ]
+    },
+    "north": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -8
+     ]
+    },
+    "north-west": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -8
+     ]
+    },
+    "west": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      0,
+      -9
+     ]
+    },
+    "south-west": {
+     "frames": 8,
+     "mirrored_from": null,
+     "offset": [
+      -2,
+      -8
+     ]
+    }
+   }
+  },
+  "attack": {
+   "sheet": "attack_sheet.png",
+   "cell": [
+    56,
+    56
+   ],
+   "foot": [
+    28,
+    50
+   ],
+   "frames": 10,
+   "fps": 12,
+   "loop": false,
+   "dirs": {
+    "south": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      3
+     ],
+     "frame0_vs_idle0_px": 0
+    },
+    "south-east": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      2
+     ],
+     "frame0_vs_idle0_px": 0
+    },
+    "east": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      2
+     ],
+     "frame0_vs_idle0_px": 0
+    },
+    "north-east": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      1
+     ],
+     "frame0_vs_idle0_px": 0
+    },
+    "north": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      2
+     ],
+     "frame0_vs_idle0_px": 0
+    },
+    "north-west": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": "north-east",
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      1
+     ],
+     "frame0_vs_idle0_px": 367
+    },
+    "west": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      1
+     ],
+     "frame0_vs_idle0_px": 0
+    },
+    "south-west": {
+     "frames": 10,
+     "take": "try/attack_sk",
+     "mirrored_from": null,
+     "align_iou": 1.0,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      0,
+      2
+     ],
+     "frame0_vs_idle0_px": 0
+    }
+   },
+   "hold_last_ms": 300,
+   "motion": "Spirit casting fling: the wisp hand is drawn up across the body to the opposite shoulder, then flung forward at shoulder height with the arm fully stretched toward the facing direction, a short hold, then back to the idle stance. The wisp moves with the hand; no bolt or particles are drawn (add the spectral bolt in-engine on frames 4-5).",
+   "last_frame": "= frame 0 = idle frame 0"
+  },
+  "hurt": {
+   "sheet": "hurt_sheet.png",
+   "cell": [
+    48,
+    48
+   ],
+   "foot": [
+    24,
+    42
+   ],
+   "frames": 6,
+   "fps": 10,
+   "loop": false,
+   "dirs": {
+    "south": {
+     "frames": 6,
+     "take": "try/hurt_b",
+     "mirrored_from": null,
+     "align_iou": 0.915,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -5
+     ],
+     "frame0_vs_idle0_px": 269
+    },
+    "south-east": {
+     "frames": 6,
+     "take": "try/hurt_cfix",
+     "mirrored_from": null,
+     "align_iou": 0.877,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -14
+     ],
+     "frame0_vs_idle0_px": 311
+    },
+    "east": {
+     "frames": 6,
+     "take": "try/hurt_b",
+     "mirrored_from": null,
+     "align_iou": 0.878,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -8
+     ],
+     "frame0_vs_idle0_px": 279
+    },
+    "north-east": {
+     "frames": 6,
+     "take": "try/hurt_main",
+     "mirrored_from": null,
+     "align_iou": 0.867,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -11
+     ],
+     "frame0_vs_idle0_px": 240
+    },
+    "north": {
+     "frames": 6,
+     "take": "try/hurt_c",
+     "mirrored_from": null,
+     "align_iou": 0.853,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -7
+     ],
+     "frame0_vs_idle0_px": 220
+    },
+    "north-west": {
+     "frames": 6,
+     "take": "try/hurt_main",
+     "mirrored_from": "north-east",
+     "align_iou": 0.867,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -11
+     ],
+     "frame0_vs_idle0_px": 386
+    },
+    "west": {
+     "frames": 6,
+     "take": "try/hurt_b",
+     "mirrored_from": "east",
+     "align_iou": 0.878,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -8
+     ],
+     "frame0_vs_idle0_px": 340
+    },
+    "south-west": {
+     "frames": 6,
+     "take": "try/hurt_cfix",
+     "mirrored_from": "south-east",
+     "align_iou": 0.877,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -14
+     ],
+     "frame0_vs_idle0_px": 395
+    }
+   }
+  },
+  "death": {
+   "sheet": "death_sheet.png",
+   "cell": [
+    48,
+    48
+   ],
+   "foot": [
+    24,
+    42
+   ],
+   "frames": 8,
+   "fps": 8,
+   "loop": false,
+   "dirs": {
+    "south": {
+     "frames": 8,
+     "take": "try/death_main",
+     "mirrored_from": null,
+     "align_iou": 0.904,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -7,
+      -5
+     ],
+     "frame0_vs_idle0_px": 303
+    },
+    "south-east": {
+     "frames": 8,
+     "take": "try/death_main",
+     "mirrored_from": null,
+     "align_iou": 0.851,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -5,
+      -10
+     ],
+     "frame0_vs_idle0_px": 347
+    },
+    "east": {
+     "frames": 8,
+     "take": "try/death_main",
+     "mirrored_from": null,
+     "align_iou": 0.853,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -5,
+      -10
+     ],
+     "frame0_vs_idle0_px": 317
+    },
+    "north-east": {
+     "frames": 8,
+     "take": "try/death_c",
+     "mirrored_from": null,
+     "align_iou": 0.886,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -16
+     ],
+     "frame0_vs_idle0_px": 291
+    },
+    "north": {
+     "frames": 8,
+     "take": "try/death_main",
+     "mirrored_from": null,
+     "align_iou": 0.923,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -8
+     ],
+     "frame0_vs_idle0_px": 201
+    },
+    "north-west": {
+     "frames": 8,
+     "take": "try/death_c",
+     "mirrored_from": "north-east",
+     "align_iou": 0.886,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -4,
+      -16
+     ],
+     "frame0_vs_idle0_px": 392
+    },
+    "west": {
+     "frames": 8,
+     "take": "try/death_main",
+     "mirrored_from": "east",
+     "align_iou": 0.853,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -3,
+      -10
+     ],
+     "frame0_vs_idle0_px": 365
+    },
+    "south-west": {
+     "frames": 8,
+     "take": "try/death_main",
+     "mirrored_from": null,
+     "align_iou": 0.909,
+     "fx_removed_px": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+     ],
+     "offset": [
+      -3,
+      -12
+     ],
+     "frame0_vs_idle0_px": 327
+    }
+   },
+   "hold_last_ms": 1200
+  }
+ },
+ "pivots": {
+  "idle": {
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    38
+   ]
+  },
+  "walk": {
+   "cell": [
+    40,
+    40
+   ],
+   "foot": [
+    20,
+    38
+   ]
+  },
+  "attack": {
+   "cell": [
+    56,
+    56
+   ],
+   "foot": [
+    28,
+    50
+   ]
+  },
+  "hurt": {
+   "cell": [
+    48,
+    48
+   ],
+   "foot": [
+    24,
+    42
+   ]
+  },
+  "death": {
+   "cell": [
+    48,
+    48
+   ],
+   "foot": [
+    24,
+    42
+   ]
+  }
+ },
+ "pivot_rule": "foot (bottom-centre pivot) = (C/2, C-6) on combat cells; idle/walk use the hero cell's own foot",
+ "attack_note": "Spirit casting fling: the wisp hand is drawn up across the body to the opposite shoulder, then flung forward at shoulder height with the arm fully stretched toward the facing direction, a short hold, then back to the idle stance. The wisp moves with the hand; no bolt or particles are drawn (add the spectral bolt in-engine on frames 4-5)."
+}

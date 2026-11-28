@@ -1,0 +1,59 @@
+{
+  "name": "The Salon",
+  "slug": "salon_room",
+  "tile_size": 32,
+  "width": 16,
+  "height": 11,
+  "seed": 8901,
+  "scheme": "ash_blue",
+  "entry": [400, 144],
+  "stamps": [[2, 1, "wall_features_ash_blue", "window_upper"], [2, 2, "wall_features_ash_blue", "window_lower"], [2, 3, "parquet", "parquet_moonlight"], [4, 1, "wall_features_ash_blue", "peeling_upper"], [4, 2, "wall_features_ash_blue", "peeling_lower"], [6, 1, "wall_features_ash_blue", "fireplace_upper_l"], [6, 2, "wall_features_ash_blue", "fireplace_lower_l_f0"], [7, 1, "wall_features_ash_blue", "fireplace_upper_r"], [7, 2, "wall_features_ash_blue", "fireplace_lower_r_f0"], [9, 1, "wall_features_ash_blue", "plain_upper"], [9, 2, "wall_features_ash_blue", "plain_lower"], [10, 1, "wall_features_ash_blue", "window_upper"], [10, 2, "wall_features_ash_blue", "window_lower"], [10, 3, "parquet", "parquet_moonlight"], [12, 1, "wall_features_ash_blue", "door_upper"], [12, 2, "wall_features_ash_blue", "door_lower"]],
+  "vertices": [
+    ["wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall"],
+    ["wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall"],
+    ["wall","wall","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","manor_wall_face","wall","wall"],
+    ["wall","wall","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","parquet","parquet","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","parquet","parquet","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","parquet","parquet","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","rug_wine","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","parquet","wall","wall"],
+    ["wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall"],
+    ["wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall","wall"]
+  ],
+  "cells": [
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":11},{"set":"wall_features_ash_blue","index":0},{"set":"manor_wall_ash_blue","index":12},{"set":"wall_features_ash_blue","index":8},{"set":"manor_wall_ash_blue","index":12},{"set":"wall_features_ash_blue","index":16},{"set":"wall_features_ash_blue","index":18},{"set":"manor_wall_ash_blue","index":12},{"set":"wall_features_ash_blue","index":14},{"set":"wall_features_ash_blue","index":0},{"set":"manor_wall_ash_blue","index":12},{"set":"wall_features_ash_blue","index":4},{"set":"manor_wall_ash_blue","index":12},{"set":"manor_wall_ash_blue","index":18},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":14},{"set":"wall_features_ash_blue","index":1},{"set":"manor_wall_ash_blue","index":15},{"set":"wall_features_ash_blue","index":9},{"set":"manor_wall_ash_blue","index":15},{"set":"wall_features_ash_blue","index":30},{"set":"wall_features_ash_blue","index":31},{"set":"manor_wall_ash_blue","index":15},{"set":"wall_features_ash_blue","index":15},{"set":"wall_features_ash_blue","index":1},{"set":"manor_wall_ash_blue","index":15},{"set":"wall_features_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":15},{"set":"manor_wall_ash_blue","index":21},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":8},{"set":"parquet","index":5},{"set":"parquet","index":2},{"set":"parquet","index":1},{"set":"parquet","index":0},{"set":"parquet","index":1},{"set":"parquet","index":1},{"set":"parquet","index":1},{"set":"parquet","index":1},{"set":"parquet","index":5},{"set":"parquet","index":2},{"set":"parquet","index":2},{"set":"parquet","index":0},{"set":"manor_wall_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":8},{"set":"parquet","index":0},{"set":"parquet","index":0},{"set":"parquet","index":3},{"set":"parquet","index":1},{"set":"parquet","index":0},{"set":"parquet","index":0},{"set":"parquet","index":2},{"set":"parquet","index":2},{"set":"parquet","index":1},{"set":"parquet","index":3},{"set":"parquet","index":1},{"set":"parquet","index":1},{"set":"manor_wall_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":8},{"set":"parquet","index":1},{"set":"rug_wine","index":7},{"set":"rug_wine","index":9},{"set":"rug_wine","index":9},{"set":"rug_wine","index":9},{"set":"rug_wine","index":9},{"set":"rug_wine","index":9},{"set":"rug_wine","index":9},{"set":"rug_wine","index":9},{"set":"rug_wine","index":10},{"set":"parquet","index":1},{"set":"parquet","index":0},{"set":"manor_wall_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":8},{"set":"parquet","index":0},{"set":"rug_wine","index":11},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":1},{"set":"parquet","index":3},{"set":"parquet","index":0},{"set":"manor_wall_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":8},{"set":"parquet","index":0},{"set":"rug_wine","index":11},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":12},{"set":"rug_wine","index":1},{"set":"parquet","index":1},{"set":"parquet","index":0},{"set":"manor_wall_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":8},{"set":"parquet","index":0},{"set":"rug_wine","index":2},{"set":"rug_wine","index":3},{"set":"rug_wine","index":3},{"set":"rug_wine","index":3},{"set":"rug_wine","index":3},{"set":"rug_wine","index":3},{"set":"rug_wine","index":3},{"set":"rug_wine","index":3},{"set":"rug_wine","index":5},{"set":"parquet","index":1},{"set":"parquet","index":0},{"set":"manor_wall_ash_blue","index":5},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":9},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":2},{"set":"manor_wall_ash_blue","index":10},{"set":"manor_wall_ash_blue","index":6}],
+    [{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6},{"set":"manor_wall_ash_blue","index":6}]
+  ],
+  "decals": [],
+  "props": [
+    {"prop":"wall_sconce_anim","x":176,"y":84},
+    {"prop":"wall_sconce_anim","x":272,"y":84},
+    {"prop":"portrait_small","x":304,"y":80},
+    {"prop":"portrait_small","x":112,"y":80},
+    {"prop":"sofa","x":116,"y":154},
+    {"prop":"vase_dead_flowers","x":428,"y":148},
+    {"prop":"armchair","x":166,"y":262},
+    {"prop":"armchair","x":314,"y":262},
+    {"prop":"tea_table","x":240,"y":276},
+    {"prop":"candelabra_anim","x":90,"y":236},
+    {"prop":"candelabra_anim","x":396,"y":250},
+    {"prop":"dust_sheet_armchair","x":108,"y":298},
+    {"prop":"broken_chair","x":422,"y":298}
+  ],
+  "actors": [
+    {"sprite":"heroes/medium","anim":"idle","dir":"south-west","x":372,"y":186},
+    {"sprite":"enemies/ghost_maid","anim":"idle","dir":"south","x":240,"y":172},
+    {"sprite":"enemies/possessed_doll","anim":"idle","dir":"north-west","x":276,"y":294}
+  ]
+}

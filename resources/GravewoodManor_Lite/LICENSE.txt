@@ -1,0 +1,19 @@
+GRAVEWOOD MANOR LITE (FREE VERSION) - LICENSE
+
+You may:
+- Use the assets in commercial and non-commercial projects: games, prototypes, videos, streams.
+- Modify them freely: recolour, edit, cut, rearrange, mix with your own art.
+- Use them in a team. One purchase covers one person or one team working on the same project.
+
+You may not:
+- Resell, redistribute or share the assets themselves, in original or modified form. This includes putting them
+  in another asset pack, template, engine kit or public repository, and uploading them to an asset store.
+- Claim the assets as your own work.
+
+Credit is appreciated but not required: "Gravewood Manor by yusufkrtp".
+
+The assets are provided as they are, without warranty.
+
+This is the free version. The same terms apply to the full pack.
+
+(c) yusufkrtp

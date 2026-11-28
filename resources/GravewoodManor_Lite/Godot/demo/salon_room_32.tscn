@@ -1,0 +1,105 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="TileSet" path="res://gravewood/32/tileset_ash_blue.tres" id="1_tileset_ash_blue"]
+[ext_resource type="PackedScene" path="res://gravewood/32/props/wall_sconce_anim.tscn" id="2_wall_sconce_anim"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/portrait_small.png" id="3_portrait_small"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/sofa.png" id="4_sofa"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/vase_dead_flowers.png" id="5_vase_dead_flowers"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/armchair.png" id="6_armchair"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/tea_table.png" id="7_tea_table"]
+[ext_resource type="PackedScene" path="res://gravewood/32/props/candelabra_anim.tscn" id="8_candelabra_anim"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/dust_sheet_armchair.png" id="9_dust_sheet_armchair"]
+[ext_resource type="Texture2D" path="res://gravewood/32/props/broken_chair.png" id="10_broken_chair"]
+[ext_resource type="PackedScene" path="res://gravewood/32/heroes/medium/medium.tscn" id="11_medium"]
+[ext_resource type="PackedScene" path="res://gravewood/32/enemies/ghost_maid/ghost_maid.tscn" id="12_ghost_maid"]
+[ext_resource type="PackedScene" path="res://gravewood/32/enemies/possessed_doll/possessed_doll.tscn" id="13_possessed_doll"]
+
+[node name="salon_room" type="Node2D"]
+texture_filter = 1
+y_sort_enabled = true
+
+[node name="Ground" type="TileMapLayer" parent="."]
+z_index = -2
+tile_map_data = PackedByteArray(0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 7, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 8, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 9, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 10, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 11, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 12, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 13, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 14, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 15, 0, 0, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 6, 0, 0, 0, 2, 0, 1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 3, 0, 1, 0, 1, 0, 3, 0, 0, 0, 0, 0, 4, 0, 1, 0, 3, 0, 4, 0, 0, 0, 0, 0, 5, 0, 1, 0, 1, 0, 3, 0, 0, 0, 0, 0, 6, 0, 1, 0, 3, 0, 0, 0, 2, 0, 0, 0, 7, 0, 1, 0, 3, 0, 1, 0, 2, 0, 0, 0, 8, 0, 1, 0, 1, 0, 3, 0, 0, 0, 0, 0, 9, 0, 1, 0, 3, 0, 7, 0, 0, 0, 0, 0, 10, 0, 1, 0, 3, 0, 0, 0, 0, 0, 0, 0, 11, 0, 1, 0, 1, 0, 3, 0, 0, 0, 0, 0, 12, 0, 1, 0, 3, 0, 2, 0, 0, 0, 0, 0, 13, 0, 1, 0, 1, 0, 3, 0, 0, 0, 0, 0, 14, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 15, 0, 1, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 2, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 2, 0, 1, 0, 1, 0, 7, 0, 0, 0, 2, 0, 2, 0, 3, 0, 0, 0, 1, 0, 0, 0, 3, 0, 2, 0, 1, 0, 3, 0, 1, 0, 0, 0, 4, 0, 2, 0, 3, 0, 4, 0, 1, 0, 0, 0, 5, 0, 2, 0, 1, 0, 3, 0, 1, 0, 0, 0, 6, 0, 2, 0, 3, 0, 0, 0, 4, 0, 0, 0, 7, 0, 2, 0, 3, 0, 1, 0, 4, 0, 0, 0, 8, 0, 2, 0, 1, 0, 3, 0, 1, 0, 0, 0, 9, 0, 2, 0, 3, 0, 7, 0, 1, 0, 0, 0, 10, 0, 2, 0, 3, 0, 0, 0, 1, 0, 0, 0, 11, 0, 2, 0, 1, 0, 3, 0, 1, 0, 0, 0, 12, 0, 2, 0, 3, 0, 2, 0, 1, 0, 0, 0, 13, 0, 2, 0, 1, 0, 3, 0, 1, 0, 0, 0, 14, 0, 2, 0, 1, 0, 0, 0, 1, 0, 0, 0, 15, 0, 2, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 3, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 3, 0, 1, 0, 1, 0, 1, 0, 0, 0, 2, 0, 3, 0, 0, 0, 5, 0, 0, 0, 0, 0, 3, 0, 3, 0, 0, 0, 2, 0, 0, 0, 0, 0, 4, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 5, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 6, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 7, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 8, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 9, 0, 3, 0, 0, 0, 1, 0, 0, 0, 0, 0, 10, 0, 3, 0, 0, 0, 5, 0, 0, 0, 0, 0, 11, 0, 3, 0, 0, 0, 2, 0, 0, 0, 0, 0, 12, 0, 3, 0, 0, 0, 2, 0, 0, 0, 0, 0, 13, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 3, 0, 1, 0, 3, 0, 4, 0, 0, 0, 15, 0, 3, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 4, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 4, 0, 1, 0, 1, 0, 1, 0, 0, 0, 2, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 0, 4, 0, 0, 0, 3, 0, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 6, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 8, 0, 4, 0, 0, 0, 2, 0, 0, 0, 0, 0, 9, 0, 4, 0, 0, 0, 2, 0, 0, 0, 0, 0, 10, 0, 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 11, 0, 4, 0, 0, 0, 3, 0, 0, 0, 0, 0, 12, 0, 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 13, 0, 4, 0, 0, 0, 1, 0, 0, 0, 0, 0, 14, 0, 4, 0, 1, 0, 3, 0, 4, 0, 0, 0, 15, 0, 4, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 5, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 5, 0, 1, 0, 1, 0, 1, 0, 0, 0, 2, 0, 5, 0, 0, 0, 1, 0, 0, 0, 0, 0, 3, 0, 5, 0, 2, 0, 3, 0, 1, 0, 0, 0, 4, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 5, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 6, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 7, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 8, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 9, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 10, 0, 5, 0, 2, 0, 1, 0, 2, 0, 0, 0, 11, 0, 5, 0, 2, 0, 2, 0, 2, 0, 0, 0, 12, 0, 5, 0, 0, 0, 1, 0, 0, 0, 0, 0, 13, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 5, 0, 1, 0, 3, 0, 4, 0, 0, 0, 15, 0, 5, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 6, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 6, 0, 1, 0, 1, 0, 1, 0, 0, 0, 2, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 6, 0, 2, 0, 3, 0, 2, 0, 0, 0, 4, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 5, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 6, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 7, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 8, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 9, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 10, 0, 6, 0, 2, 0, 0, 0, 3, 0, 0, 0, 11, 0, 6, 0, 2, 0, 1, 0, 0, 0, 0, 0, 12, 0, 6, 0, 0, 0, 3, 0, 0, 0, 0, 0, 13, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 6, 0, 1, 0, 3, 0, 4, 0, 0, 0, 15, 0, 6, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 7, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 7, 0, 1, 0, 1, 0, 1, 0, 0, 0, 2, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 7, 0, 2, 0, 3, 0, 2, 0, 0, 0, 4, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 5, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 6, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 7, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 8, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 9, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 10, 0, 7, 0, 2, 0, 0, 0, 3, 0, 0, 0, 11, 0, 7, 0, 2, 0, 1, 0, 0, 0, 0, 0, 12, 0, 7, 0, 0, 0, 1, 0, 0, 0, 0, 0, 13, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 7, 0, 1, 0, 3, 0, 4, 0, 0, 0, 15, 0, 7, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 8, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 8, 0, 1, 0, 1, 0, 1, 0, 0, 0, 2, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 8, 0, 2, 0, 2, 0, 0, 0, 0, 0, 4, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 5, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 6, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 7, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 8, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 9, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 10, 0, 8, 0, 2, 0, 3, 0, 0, 0, 0, 0, 11, 0, 8, 0, 2, 0, 1, 0, 1, 0, 0, 0, 12, 0, 8, 0, 0, 0, 1, 0, 0, 0, 0, 0, 13, 0, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 14, 0, 8, 0, 1, 0, 3, 0, 4, 0, 0, 0, 15, 0, 8, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 9, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 9, 0, 1, 0, 0, 0, 4, 0, 0, 0, 2, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 3, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 4, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 5, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 6, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 7, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 8, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 9, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 10, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 11, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 12, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 13, 0, 9, 0, 1, 0, 1, 0, 4, 0, 0, 0, 14, 0, 9, 0, 1, 0, 3, 0, 6, 0, 0, 0, 15, 0, 9, 0, 1, 0, 0, 0, 6, 0, 0, 0, 0, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 1, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 2, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 3, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 4, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 5, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 6, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 7, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 8, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 9, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 10, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 11, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 12, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 13, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 14, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0, 15, 0, 10, 0, 1, 0, 0, 0, 6, 0, 0, 0)
+tile_set = ExtResource("1_tileset_ash_blue")
+
+[node name="wall_sconce_anim" parent="." instance=ExtResource("2_wall_sconce_anim")]
+position = Vector2(176, 84)
+
+[node name="wall_sconce_anim_2" parent="." instance=ExtResource("2_wall_sconce_anim")]
+position = Vector2(272, 84)
+
+[node name="portrait_small" type="Sprite2D" parent="."]
+position = Vector2(304, 80)
+texture = ExtResource("3_portrait_small")
+centered = false
+offset = Vector2(-9, -23)
+
+[node name="portrait_small_2" type="Sprite2D" parent="."]
+position = Vector2(112, 80)
+texture = ExtResource("3_portrait_small")
+centered = false
+offset = Vector2(-9, -23)
+
+[node name="sofa" type="Sprite2D" parent="."]
+position = Vector2(116, 154)
+texture = ExtResource("4_sofa")
+centered = false
+offset = Vector2(-40, -29)
+
+[node name="vase_dead_flowers" type="Sprite2D" parent="."]
+position = Vector2(428, 148)
+texture = ExtResource("5_vase_dead_flowers")
+centered = false
+offset = Vector2(-16, -45)
+
+[node name="armchair" type="Sprite2D" parent="."]
+position = Vector2(166, 262)
+texture = ExtResource("6_armchair")
+centered = false
+offset = Vector2(-24, -45)
+
+[node name="armchair_2" type="Sprite2D" parent="."]
+position = Vector2(314, 262)
+texture = ExtResource("6_armchair")
+centered = false
+offset = Vector2(-24, -45)
+
+[node name="tea_table" type="Sprite2D" parent="."]
+position = Vector2(240, 276)
+texture = ExtResource("7_tea_table")
+centered = false
+offset = Vector2(-15, -29)
+
+[node name="candelabra_anim" parent="." instance=ExtResource("8_candelabra_anim")]
+position = Vector2(90, 236)
+
+[node name="candelabra_anim_2" parent="." instance=ExtResource("8_candelabra_anim")]
+position = Vector2(396, 250)
+
+[node name="dust_sheet_armchair" type="Sprite2D" parent="."]
+position = Vector2(108, 298)
+texture = ExtResource("9_dust_sheet_armchair")
+centered = false
+offset = Vector2(-23, -45)
+
+[node name="broken_chair" type="Sprite2D" parent="."]
+position = Vector2(422, 298)
+texture = ExtResource("10_broken_chair")
+centered = false
+offset = Vector2(-23, -45)
+
+[node name="medium" parent="." instance=ExtResource("11_medium")]
+position = Vector2(372, 186)
+animation = &"idle_south_west"
+autoplay = "idle_south_west"
+
+[node name="ghost_maid" parent="." instance=ExtResource("12_ghost_maid")]
+position = Vector2(240, 172)
+animation = &"idle_south"
+autoplay = "idle_south"
+
+[node name="possessed_doll" parent="." instance=ExtResource("13_possessed_doll")]
+position = Vector2(276, 294)
+animation = &"idle_north_west"
+autoplay = "idle_north_west"
